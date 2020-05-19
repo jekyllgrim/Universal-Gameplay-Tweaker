@@ -1,0 +1,1 @@
+alias UGTreset "ugt_resetall true"

@@ -1,0 +1,16 @@
+server float	ugt_monsterhealthmul 	= 1.0;
+server float	ugt_monsterdamagemul 	= 1.0;
+server float	ugt_monstersizemul 		= 1.0;
+server float	ugt_monsterspeedmul 	= 1.0;
+server int 		ugt_fastmonsters		= 0;
+server int 		ugt_monstersrespawn		= 0;
+server float 	ugt_monstersprojvel		= 1.0;
+
+
+server float	ugt_medamountmul		= 1.0;
+server float	ugt_ammoamountmul		= 1.0;
+server float	ugt_armoramountmul		= 1.0;
+server float	ugt_armorsavemul		= 1.0;
+server float	ugt_powerupmul			= 1.0;
+
+server bool ugt_resetall = false;

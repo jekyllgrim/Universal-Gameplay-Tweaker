@@ -1,0 +1,41 @@
+AddOptionMenu "OptionsMenu" {
+	Submenu "Gameplay Tweaks", "GameplayTweaks"
+}
+
+OptionMenu "GameplayTweaks" {
+	Title "Gameplay Tweaks"
+
+	StaticText "Requires a level restart", yellow
+	StaticText ""
+	
+	StaticText ""
+	StaticText "Monsters", green
+	StaticText ""
+	
+	Slider "Monster Health Multiplier",				"ugt_monsterhealthmul",	0.0,10000.0,0.5,1
+	Slider "Monster Damage Multiplier",				"ugt_monsterdamagemul",	0.0,10000.0,0.5,1
+	Slider "Monster Speed Multiplier",				"ugt_monsterspeedmul",	0.0,100.0,0.1,1
+	Slider "Monster Size Multiplier",				"ugt_monstersizemul",	0.1,20.0,0.1,1
+	Slider "Monster Projectile Velocity Multiplier","ugt_monstersprojvel",	0.1,10.0,0.1,1	
+	Option "Fast Monsters", 						"ugt_fastmonsters", 	"FastMonsters"
+	Option "Monsters Respawn", 						"ugt_monstersrespawn", 	"FastMonsters"
+	
+	StaticText ""
+	StaticText "Items", green
+	StaticText ""
+	
+	Slider "Ammo Pickup Amount Multiplier",			"ugt_ammoamountmul",	0.0,100.0,0.5,1
+	Slider "Health Pickup Amount Multiplier",		"ugt_medamountmul",		0.0,100.0,0.5,1
+	Slider "Armor Pickup Amount Multiplier",		"ugt_armoramountmul",	0.0,100.0,0.5,1
+	Slider "Armor Damage Reduction Multiplier",		"ugt_armorsavemul",		0.0,100.0,0.5,1
+	Slider "Power-Up Duration Multiplier",			"ugt_powerupmul",		0.1,100.0,0.5,1	
+	
+	StaticText ""
+	SafeCommand "Reset to default", "UGTreset", "Are you sure you want to reset all modifiers to default values?"
+}
+
+OptionValue "FastMonsters" {
+	0, "Default (only Nightmare)"
+	1, "Always"
+	2, "Never"
+}
